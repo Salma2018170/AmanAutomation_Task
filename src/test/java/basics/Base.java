@@ -41,7 +41,7 @@ public class Base {
         driver.manage().window().maximize();
         driver.get(properties.getProperty("URL"));
         homePage=new HomePage(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
     }
 
     @AfterClass

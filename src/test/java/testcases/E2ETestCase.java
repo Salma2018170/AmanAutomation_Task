@@ -12,7 +12,7 @@ public class E2ETestCase extends Base {
     private String secondName="Mohamed";
     private String address="maadi";
     private String city="cairo";
-    private String nation="القاهره";
+    private String nation="القاهرة";
     private String phone="01159328594";
 
     @Test(description = "choose beauty category")

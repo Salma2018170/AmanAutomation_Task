@@ -8,9 +8,9 @@ public class CheckOutPage {
     private WebDriver driver;
     //elements
     By emailField= By.xpath("//input[@type=\"email\"]");
-    By firstNameField=By.id("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[2]/div/input");
+    By firstNameField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[2]/div/input");
     By secondNameField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[3]/div/input");
-    By cityField=By.id("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[6]/div/input");
+    By cityField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[6]/div/input");
     By nationDropDown=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[4]/div/select");
     By addressField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/fieldset/div/div/div/input");
     By phoneField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[7]/div/input");
@@ -31,7 +31,7 @@ public class CheckOutPage {
     }
     public void setNationDropDown(String value){
         Select select=new Select(driver.findElement(nationDropDown));
-        select.selectByValue(value);
+        select.selectByVisibleText(value);
     }
     public void setAddressField(String address){
         driver.findElement(addressField).sendKeys(address);
