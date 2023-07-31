@@ -8,12 +8,12 @@ public class CheckOutPage {
     private WebDriver driver;
     //elements
     By emailField= By.xpath("//input[@type=\"email\"]");
-    By firstNameField=By.id("PRQRB8B");
-    By secondNameField=By.id("G637IDH");
-    By cityField=By.id("WE2U6L5");
-    By nationDropDown=By.id("J25TS6G");
-    By addressField=By.id("VHX53P6");
-    By phoneField=By.id("N5BHLCB");
+    By firstNameField=By.id("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[2]/div/input");
+    By secondNameField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[3]/div/input");
+    By cityField=By.id("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[6]/div/input");
+    By nationDropDown=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[4]/div/select");
+    By addressField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/fieldset/div/div/div/input");
+    By phoneField=By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[6]/div[1]/div/li/div/div/form[2]/div/div[7]/div/input");
     public CheckOutPage(WebDriver driver){
         this.driver=driver;
     }
